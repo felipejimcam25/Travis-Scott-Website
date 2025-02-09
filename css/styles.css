@@ -1,0 +1,510 @@
+@font-face {
+    font-family: 'cactus';
+    src: url(../Fonts/Cactus\ Jack.woff);
+}
+@font-face {
+    font-family: 'poppins-bold';
+    src: url(../Fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'poppins-regular';
+    src: url(../Fonts/Poppins-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+main{
+    background: #000;
+}
+
+section{
+    padding: 20px 10px;
+}
+
+.container{
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+.flex{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    background: none;
+    border: none;
+
+}
+
+/* ========= Header Styles ==============*/
+header{
+    background: url(../Edited_images/banner/Banner_bg.jpg) center/cover no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: #000;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #A67E5B;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #493E2D;
+}
+
+/* ========= Nav Styles ==============*/
+.logo{
+    font-family: 'poppins-bold', sans-serif;
+    font-size: 20px;
+    color: #A67E5B;
+}
+.open{
+    width: 24px;
+    height: 24px;
+
+}
+.close{
+    width: 100%;
+    justify-content: flex-end;
+}
+.close img{
+    width: 24px;
+    height: 24px;
+}
+
+.navigation{
+    background-color: transparent;
+    padding: 20px;
+}
+
+.nav-menu{
+    justify-content: space-between;
+}
+
+.nav-list{
+    visibility: hidden;
+    opacity: 0;
+    width: 50%;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    gap: 20px;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 30px 0px 0px 30px;
+    padding: 20px ;
+    background-color: #000;
+    transition: right 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    border: 1px solid #A67E5B;
+    box-shadow: 0px 0px  0px 100vmax rgba(0,0,0,0.5);
+}
+
+.visible-nav{
+    visibility: visible;
+    opacity: 1;
+    transition: right 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+}
+.nav-link{
+    font-family: 'poppins-bold', sans-serif;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover{
+    color: #A67E5B;
+}
+
+.banner-content{
+    width: 100%;
+    height: 80%;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+
+}
+
+.banner-title{
+    font-family: 'cactus', sans-serif;
+    gap: 50px;
+    font-size: 40px;
+    color: #fff;
+    text-align: start;
+}
+
+.banner-description{
+    font-family: 'poppins-regular', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: start;
+    margin-top: 20px;
+}
+
+.btn-tickets {
+    font-family: 'poppins-regular', sans-serif;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #594731;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-tickets:hover {
+    background: #594731;
+    color: #fff;
+}
+/* ========= End Nav Styles ==============*/
+
+/* ============== About Styles =============== */
+.about-section{
+    padding: 20px 10px;
+}
+
+.about-title{
+    font-family: 'cactus', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    text-align: start;
+}
+.about-travis-content{
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.travis-text{
+    max-width: 200px;
+}
+
+.travis-title{
+    font-family: 'cactus', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    text-align: start;
+    margin: 20px 0;
+}
+
+.travis-description{
+    font-family: 'poppins-regular', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: start;
+    margin-top: 20px;
+}
+
+.image-about{
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+/* ============== END About Styles =============== */
+
+
+
+
+
+
+
+
+
+
+/* ============== Next Event Styles =============== */
+.events{
+    background: #000;
+    background: url(../Edited_images/banner/banner_next_event.jpg) center/cover no-repeat;
+    height: auto;
+
+}
+.tour-title{
+    text-align: center;
+    color: #fff;
+    font-family: 'cactus', sans-serif;
+    font-size: 40px;
+}
+
+.next-event-content{
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.next-title{
+    text-align: start;
+    color: #fff;
+    font-family: 'cactus', sans-serif;
+    font-size: 30px;
+}
+
+
+.event-description{
+    font-family: 'poppins-regular', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.date-location-event{
+    justify-content: space-between;
+}
+
+.location, .date-next{
+    align-items: center;
+}
+
+.event-data{
+    font-family: 'cactus', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: start;
+}
+
+.brand-album{
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.brand-album-text{
+    font-family: 'cactus', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: start;
+    margin-top: 20px;
+}
+
+
+
+/* ============== End Next Event Styles =============== */
+
+/* ============================= Upcomig Events Section STYLES ==========================*/
+.upcoming-dates{
+    flex-wrap: wrap;
+}
+
+.dates-container{
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.upcoming-title{
+    color: #fff;
+    font-family: 'cactus', sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+.info-event{
+    color: #fff;
+    font-family: 'cactus', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+.date{
+    justify-content: center;
+    border-top: 1px solid #A67E5B;
+    border-bottom: 1px solid #A67E5B;
+}
+.date-event{
+    padding: 10px 0;
+}
+.dates-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.divider{
+    width: 100%;
+    height: 1px;
+    background: #A67E5B;
+    margin: 30px 0;
+}
+
+/* ============================= Upcomig Events Section STYLES ==========================*/
+
+/*============================ Invited Artist =============================*/
+.invited-title{
+    font-family: 'cactus', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+.artists{
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.wrapper{
+    justify-content: center;
+    align-items: center;
+}
+
+.invited-artist{
+    position: relative;
+}
+
+.artist-description{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* .artist-description:hover{
+    opacity: 1;
+} */
+
+
+.artist-description > *{
+    transform: translateY(50px);
+    transition: transform 0.3s ease;
+}
+
+/* .artist-description:hover > *{
+    transform: translateY(50px);
+} */
+
+.artist-img{
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+.artist-name{
+    font-family: 'cactus', sans-serif;
+    font-size: 30px;
+    color: #A67E5B;
+    text-align: center;
+}
+
+
+/*============================ Invited Artist =============================*/
+
+
+
+/*============================ DISCOGRAPHY =============================*/
+
+.discography{
+    flex-direction: column;
+    padding: 20px 10px;
+
+}
+.discography-content{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.album-content{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.disco-title{
+    font-family: 'cactus', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.disco-sub{
+    font-family: 'cactus', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    text-align: start;
+}
+
+.album-img{
+    width: 150px;
+    height: auto;
+}
+
+.album-name{
+    font-family: 'cactus', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+/*============================ DISCOGRAPHY =============================*/
+
+
+/*============================ FOOTER =============================*/
+
+footer{
+    width: 100%;
+    border-top: 1px solid #A67E5B;
+    background: #000;
+    padding: 20px 10px;
+    position: relative;
+}
+
+.footer-left{
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.copy-text{
+    color: #fff;
+    font-family: 'poppins-regular', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.dev-author{
+    color: #fff;
+    font-family: 'poppins-regular', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+.scrollupBtn{
+    position: absolute;
+    justify-content: end;
+    right: 0;
+    top: 1%;
+}
+
+.up-arrow{
+    color: #A67E5B;
+    font-size: 20px;
+    background-color: #493E2D;
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
