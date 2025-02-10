@@ -460,6 +460,79 @@ header{
 
 /*============================ DISCOGRAPHY =============================*/
 
+/*=============================== Get Tickets =============================*/
+.get-tickets{
+    background-color: #fff;
+    background: url(../Edited_images/banner/Banner_tickets.jpg) center/cover no-repeat;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.tickets-title{
+    font-family: 'cactus', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.tickets-price{
+    width: 100%;
+    perspective: 100px;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.tickets-card{
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px 5px;
+    border-radius: 10px; /* Fondo semi-transparente */
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0.8; /* Hace que todo el elemento sea más transparente */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transition: transform 0.5s ease,  background-color 0.5s ease;
+}
+
+.tickets-card:hover{
+    background-color: #A67E5B;
+    color: #fff;
+    transform: translateZ(5px);
+}
+
+
+.feature-mark{
+    color: #A67E5B;
+}
+
+.button-get-tickets{
+    width: 100%;
+    gap: 5px;
+    justify-content: center;
+
+}
+
+.btn-get{
+    width: 60%;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 3px 20px;
+    font-family: 'poppins-regular', sans-serif;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-get:hover{
+    background: #594731;
+    color: #000;
+}
+
+
+
+
 
 /*============================ FOOTER =============================*/
 
@@ -506,5 +579,8 @@ footer{
     margin-right: 10px;
     margin-top: 10px;
 }
+
+
+/*============================ FOOTER =============================*/
 
 
